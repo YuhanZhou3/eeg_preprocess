@@ -1,4 +1,5 @@
 # Configurations / Constants 
+DRUG_ABBR = {}  # e.g. "Psilocybin": "psi"
 
 FS = 256 # sampling frequency (f_s); unit = sample/sec
 

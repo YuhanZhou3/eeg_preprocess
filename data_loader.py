@@ -3,15 +3,13 @@ import numpy as np
 import pandas as pd
 
 from utils import pad, find_segments
+from config import DRUG_ABBR
     
 class EEGDataLoader:
     """ ECoG data loader and accessor
-    (the data were stored as .mat files)
+    (the data are assumed to be stored as .mat files)
     
     """
-    
-    # Metadata
-    DRUG_ABBR = {"Psilocybin": "psi", "LSD": "lsd", "5-MeO-DMT": "dmt"}
     
     def __init__(self, fpaths: dict, preprocess_clean: bool = True):
         """ 
@@ -65,7 +63,7 @@ class EEGDataLoader:
                     
                     rows.append({
                         "drug_name": drug,
-                        "drug_abbr": self.DRUG_ABBR[drug],
+                        "drug_abbr": DRUG_ABBR[drug],
                         "animal_id": animal_id,
                         "animal_idx": animal_idx,
                         "window_name": window_name,

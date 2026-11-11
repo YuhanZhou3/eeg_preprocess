@@ -196,11 +196,11 @@ Potential extensions include:
 - Additional time-domain and frequency-domain features.
 - Spectral entropy and signal complexity measures.
 - Automated artifact detection and rejection.
-- EMG feature extraction.
+- EMG feature extraction (if any).
 - Time-resolved spectral analysis.
 - Batch feature extraction and dataset export.
 - Integration with downstream machine-learning pipelines.
 
-## License
+<!-- ## License
 
-License to be determined.
+License to be determined. -->
